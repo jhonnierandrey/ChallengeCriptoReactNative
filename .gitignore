@@ -66,3 +66,6 @@ flow-typed
 # CocoaPods
 /ios/Pods/
 GoogleService-Info.plist
+
+# miscellaneous
+/vendor/bundle/ruby/2.7.0
