@@ -1,4 +1,3 @@
-/* import React from 'react'; */
 import React from 'react';
 import {View, Image, Text} from 'react-native';
 
@@ -6,8 +5,13 @@ import {listItemStyles} from './listItemStyles';
 
 import buyArrow from '../../assets/img/buy.png';
 import sellArrow from '../../assets/img/sell.png';
+import { Coin } from '../../types/types';
 
-const ListItem = ({item}) => {
+type ListItemPros = {
+  item : Coin,
+}
+
+const ListItem = ({item} : ListItemPros) => {
   const imgURI = `https://asset-images.messari.io/images/${item.id}/64.png`;
   return(
   <>
@@ -38,7 +42,7 @@ const ListItem = ({item}) => {
                   : listItemStyles.healthSell
               }>
               {' '}
-              {item?.market_data?.percent_change_usd_last_24_hours}%
+              {item?.market_data?.percent_change_usd_last_24_hours.toLocaleString(undefined, {maximumFractionDigits: 2})}%
             </Text>
           </Text>
         </View>
