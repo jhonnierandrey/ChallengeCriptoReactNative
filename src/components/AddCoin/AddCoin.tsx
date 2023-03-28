@@ -3,7 +3,6 @@ import { View, Text, SafeAreaView, TextInput, Pressable, TouchableOpacity } from
 import { addCoinStyles } from './addCoinStyles';
 
 const AddCoin = ({ navigation }) => {
-
     const [coinTicker, setCoinTicker] = useState<string>('');
 
     return (

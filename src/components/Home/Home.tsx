@@ -67,7 +67,7 @@ const Home = ({navigation}) => {
                         />
                     </View>
                     <View style={homeStyles.addView}>
-                        <TouchableOpacity onPress={() => { navigation.navigate('AddCoin') }}>
+                        <TouchableOpacity onPress={() => navigation.navigate('AddCoin')}>
                             <Text style={homeStyles.btnAdd}>+ Add a Cryptocurrency</Text>
                         </TouchableOpacity>
                     </View>

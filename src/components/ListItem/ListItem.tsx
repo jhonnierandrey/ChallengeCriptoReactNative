@@ -37,7 +37,6 @@ const ListItem = ({item}) => {
                   ? listItemStyles.healthBuy
                   : listItemStyles.healthSell
               }>
-              {' '}
               {item?.market_data?.percent_change_usd_last_24_hours}%
             </Text>
           </Text>

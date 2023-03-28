@@ -1,12 +1,8 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import AppStack from './src/navigation/AppStack';
 
 const App = () => {
-  return (
-    <Fragment>
-      <AppStack />
-    </Fragment>
-  );
+  return <AppStack />;
 };
 
 export default App;

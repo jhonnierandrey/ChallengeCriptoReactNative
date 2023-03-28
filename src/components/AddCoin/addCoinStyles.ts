@@ -40,13 +40,12 @@ export const addCoinStyles = StyleSheet.create({
     },
     submitBox: {
         width: '100%',
-        alignItems: 'flex-end'
+        alignItems: 'flex-end',
     },
     btnAddCoin: {
         marginVertical: 20,
         backgroundColor: palette.yellow,
         paddingVertical: 15,
-        // marginHorizontal: 30,
         width: '50%',
         borderRadius: 5,
     },
@@ -56,9 +55,6 @@ export const addCoinStyles = StyleSheet.create({
         fontSize: 18,
         color: palette.lightYellow,
     },
-    // btnStatusDisabled:{
-    //     color: palette.lightYellow,
-    // },
     btnStatusEnabled: {
         color: palette.blue,
     }
