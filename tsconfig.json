@@ -1,0 +1,15 @@
+// prettier-ignore
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "jsx": "react",
+    "typeRoots": ["./src/@types", "./node_modules/@types"],
+    "paths": {
+      "@Types": ["./src/@types/"],
+      "@Common": ["./src/common/"],
+      "@Assets": ["./src/assets/"],
+      "@Components": ["./src/components"]
+    }
+  }
+}
