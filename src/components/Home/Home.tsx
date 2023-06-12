@@ -1,34 +1,33 @@
-import React, {useState, useEffect} from 'react';
-import {useDispatch,useSelector} from 'react-redux';
+import React, { useState, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import {
-    FlatList,
-    Text,
+    FlatList, Text,
     SafeAreaView,
     View,
     TouchableOpacity,
     StatusBar,
 } from 'react-native';
-import {homeStyles} from './homeStyles';
+import { homeStyles } from './homeStyles';
 
 import { Header, ListItem } from '../index';
 import { getCoinMetrics } from '../../redux/actions/cryptoActions';
 
 import { CryptoStore, Coin } from '../../types/types';
 
-const Home = ({navigation}) => {
+const Home = ({ navigation }) => {
     const dispatch = useDispatch();
-    
-    const {savedCryptos} = useSelector((store : CryptoStore) => store.crypto);
+
+    const { savedCryptos } = useSelector((store: CryptoStore) => store.crypto);
     const [selectedCryptos, setSelectedCryptos] = useState<Coin[]>();
-    
-    useEffect(() =>{
-        if(savedCryptos.length > 0){
+
+    useEffect(() => {
+        if (savedCryptos.length > 0) {
             setSelectedCryptos(savedCryptos);
-        }else{
+        } else {
             dispatch(getCoinMetrics('btc'));
         }
     }, []);
-    
+
     useEffect(() => {
         if (savedCryptos.length >= 1) {
             setSelectedCryptos(savedCryptos);
