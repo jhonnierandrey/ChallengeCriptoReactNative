@@ -1,48 +1,49 @@
-# challenge-cripto-react-native
+# Crypto Viewer
 
-Our React-native coding challenge is a simple "Crypto Tracker". Users should be able to add new cryptocurrencies, visualize the current price and the change in price in % for the last 24 hours, and also be able to remove a cryptocurrency from the "Crypto Tracker". 
+React Native App to search and display Crypto coins using an API.
 
-```
-Important: Please make sure you use ReactNative (not Expo), Redux Thunk, Hooks, and TypeScript.
-Check your solution into github with a readme.md file detailing instructions 
-on how to get the app up and running...
-```
+<!-- > Images from [Pixabay](https://pixabay.com/) -->
 
-# Suggested design and assets:
+## How to use:
 
-You can find below a design mockup for the challenge. Please make sure you follow this design as close as possible, as it will be evaluated:
-https://www.figma.com/proto/sVfUI6ThTwAbLlhzbWj52Q/Mobile-Challenge-Nov-2019?node-id=1%3A4&scaling=scale-down
+> Before you can run this app, you need to get an API KEY from Pixabay, please go to [Pixabay API](https://pixabay.com/service/about/api/) and add your API KEY into the .env file as a value for REACT_APP_API_KEY.
 
-For the assets we recommend the material icons:
-https://material.io/resources/icons/?style=baseline
+1. Clone this repo
 
-Make sure you build your components using CSS-in-JS solution (https://styled-components.com/)
+   ```bash
+       git clone https://github.com/jhonnierandrey/rn-cypto-viewer
+   ```
 
-# Main Features of the app
+2. Install all the required dependencies.
 
-### 1) List of cryptocurrencies
-Users should be able to visualize the list of cryptocurrencies they currently have on the app.
+   ```bash
+       npm i
+   ```
 
-### 2) Current price and percentage change in the last 24h
-Users should also be able to visualize: 
-* Current price for the cryptocurrencies added
-* Change in percentage in USD in the last 24h
+3. To start on your local machine (starts using server.js):
 
-### 3) API to get pricing and percentage change
-Please use the following API to get cryptocurrency metrics: https://data.messari.io/api/v1/assets/btc/metrics.
+   ```bash
+       npm start
+   ```
 
-### 4) Remove a cryptocurrency
-From the list, users should be able to remove a cryptocurrency from the "Crypto Tracker".
+4. OPTIONAL : To start on your local machine (development):
 
-### 5) Pricing and percentage change update
-The Crypto Tracker should update the current price and percentage change in USD to the user. Choose your preferred way to update the data.
+   ```bash
+       npm run-script devp
+   ```
 
-# Evaluation Criteria
+## Contributing
 
-* Understanding of core Javascript concepts
-* Understanding of ReactNative and Redux frameworks
-* Code and component reuse/extensibility
-* Code design
-* Strategy to refresh data
-* Ability to write clear documentation
-* Correct typing of the components and variables used
+1. Fork it (<https://github.com/jhonnierandrey/rn-cypto-viewer/fork>)
+2. Create your own branch (`git checkout -b newFeature/yourIdea`)
+3. Commit your changes (`git commit -m 'Add your commit'`)
+4. Push to the branch (`git push`)
+5. Create a new Pull Request
+
+### References
+
+[Pixabay API Docs](https://pixabay.com/api/docs/)
+
+### License
+
+This project is licensed under the MIT License
