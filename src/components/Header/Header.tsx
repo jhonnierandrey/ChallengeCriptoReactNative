@@ -1,6 +1,6 @@
 import React from 'react';
-import { View, Image, Text } from 'react-native';
-import { headerStyles } from './headerStyles';
+import {View, Image, Text} from 'react-native';
+import {headerStyles} from './headerStyles';
 
 import avatar from '../../assets/img/avatar.png';
 
