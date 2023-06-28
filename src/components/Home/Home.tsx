@@ -25,9 +25,10 @@ const Home = ({navigation}) => {
     if (savedCryptos.length > 0) {
       setSelectedCryptos(savedCryptos);
     } else {
+      // @ts-ignore
       dispatch(getCoinMetrics('btc'));
     }
-  }, []);
+  }, [savedCryptos, dispatch]);
 
   useEffect(() => {
     if (savedCryptos.length >= 1) {

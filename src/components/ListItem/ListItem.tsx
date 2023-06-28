@@ -15,7 +15,7 @@ const ListItem = ({item}: ListItemPros) => {
   const imgURI = `https://asset-images.messari.io/images/${item.id}/64.png`;
   return (
     <>
-      <View style={listItemStyles.container}>
+      <View style={listItemStyles.container} key={item.id}>
         <View style={listItemStyles.leftBox}>
           <View style={listItemStyles.coinLogoBox}>
             <Image source={{uri: imgURI}} style={listItemStyles.coinLogo} />

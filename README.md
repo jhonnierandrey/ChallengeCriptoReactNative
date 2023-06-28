@@ -1,6 +1,8 @@
 # Crypto Viewer
 
-React Native app to search and display Crypto coins using an API.
+React Native app to search and display Crypto coins using the [Messari API](https://messari.io/).
+
+![Crypto Viewer](https://www.jaesmadeit.com/assets/img/projects/mobile-apps/cryptoviewer-preview.png)
 
 ## How to use:
 
@@ -33,6 +35,8 @@ React Native app to search and display Crypto coins using an API.
 ### References
 
 [React Native](https://reactnative.dev/docs/getting-started)
+
+[Messari API Docs](https://messari.io/api/docs)
 
 ### License
 
