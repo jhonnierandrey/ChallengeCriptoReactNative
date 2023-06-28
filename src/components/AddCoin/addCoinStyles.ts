@@ -58,4 +58,10 @@ export const addCoinStyles = StyleSheet.create({
   btnStatusEnabled: {
     color: palette.blue,
   },
+  coinChecker: {
+    paddingVertical: 14,
+    color: palette.green,
+    fontWeight: 'bold',
+    fontSize: 14,
+  },
 });
